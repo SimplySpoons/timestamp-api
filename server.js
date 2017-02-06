@@ -5,7 +5,6 @@
 var express = require('express'),
     routes = require('./app/routing/index.js'),
     bodyParser = require('body-parser'), // call 'body-parser' middleware to extract the entire body portion of an incoming request stream and expose it on req.body as something easier to interface with
-    api = require('./app/api/timestamp.js'),
     app = express();
     
 
@@ -21,7 +20,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 routes(app);
-api(app);
 
 app.set('port', (process.env.PORT || 8080)); // define port
 app.listen(app.get('port'), function() {
