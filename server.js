@@ -26,5 +26,5 @@ api(app);
 app.set('port', (process.env.PORT || 8080)); // define port
 app.listen(app.get('port'), function() {
     console.log('Listening on port ' + app.get('port')); //log the port in console
-});
+}); 
 
