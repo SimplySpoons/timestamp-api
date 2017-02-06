@@ -1,15 +1,31 @@
 {
-  "name": "newdirec",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "timestamp-api",
+  "version": "1.0.2",
+  "description": "FreeCodeCamp Timestamp",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimplySpoons/timestamp-api.git"
+  },
+  "keywords": [
+    "API",
+    "SimplySpoons",
+    "TimeStamp",
+    "Node"
+    "NodeJS"
+  ],
+  "author": "Luke Rossi (SimplySpoons)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SimplySpoons/timestamp-api"
+  },
+  "homepage": "https://github.com/SimplySpoons/timestamp-api#readme",
   "dependencies": {
-    "express": "^4.14.1",
-    "form-data": "^2.1.2"
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "moment": "^2.10.6"
   }
 }
