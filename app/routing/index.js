@@ -1,6 +1,6 @@
 // enable 'strict mode'
 'use strict';
-// MomentJs
+// MomentJS
 var moment = require('moment');
 
 module.exports = function(app) {
@@ -40,4 +40,4 @@ module.exports = function(app) {
         return moment(query, "MMMM D, YYYY").format("X");
     }
     
-};
+}; 
