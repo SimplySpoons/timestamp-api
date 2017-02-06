@@ -1,7 +1,7 @@
 // enable 'strict mode'
 'use strict';
 
-// required packages
+// required packages being used
 var express = require('express'),
     routes = require('./app/routing/index.js'),
     bodyParser = require('body-parser'), // call 'body-parser' middleware to extract the entire body portion of an incoming request stream and expose it on req.body as something easier to interface with
@@ -24,5 +24,5 @@ routes(app);
 app.set('port', (process.env.PORT || 8080)); // define port
 app.listen(app.get('port'), function() {
     console.log('Listening on port ' + app.get('port')); //log the port in console
-});
+}); 
 
